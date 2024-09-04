@@ -3,12 +3,38 @@
     text-align: center;
 }
 
-/* Inicio */
 body{
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    margin: 0;
 }
 
+/* Inicio */
+header{
+    width: 100%;
+    height: 55rem;
+    background-image: url("/Imgs/fondo\ header.png");
+    align-content: center;
+}
+header h2{
+    color: #FFFAFA;
+}
 
+/*General*/
+h1{
+    font-size: 5rem;
+    color: #FFFAFA;
+}
+
+h2{
+    font-size: 3rem;
+}
+button{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border-color: #FFFAFA;
+    background: none;
+    color: #FFFAFA;
+}
 
 /* Contamos con y sobre nosotros */
 main {
@@ -20,3 +46,8 @@ main {
     }
  
 /* Pie de pagina */
+footer i{
+    font-size: 80px;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
