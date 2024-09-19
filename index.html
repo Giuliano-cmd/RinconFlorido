@@ -20,7 +20,36 @@
 
     <main>
         <div id="carrousel">
-            <p>(Carrousel)</p>
+            <div class="ContainerCenter">
+                <!-- Radio Seleccionar -->
+                <input type="radio" name="Carrusel" id="Slider1" checked>
+                <input type="radio" name="Carrusel" id="Slider2">
+                <input type="radio" name="Carrusel" id="Slider3">
+                
+                <div class="Carrusels">
+                  <!-- Imagen contenido -->
+                  <div class="Carrusel" style="background-image: url(https://images.unsplash.com/photo-1600694552566-14c3c46aafd5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div> 
+                  <div class="Carrusel" style="background-image: url(https://images.unsplash.com/photo-1719562306329-911c3438019f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div>
+                  <div class="Carrusel" style="background-image: url(https://images.unsplash.com/photo-1552255278-580ab2ce246b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div>
+                  
+                  <!-- Flechas a la izquierda por cada imagen -->
+                  <label for="Slider3" class="ArrowLeft Arrow1">❮</label>
+                  <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
+                  <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
+                  
+                  <!-- Flechas a la derecha por cada imagen -->
+                  <label for="Slider2" class="ArrowRight Arrow1">❯</label> 
+                  <label for="Slider3" class="ArrowRight Arrow2">❯</label>
+                  <label for="Slider1" class="ArrowRight Arrow3">❯</label>
+                </div>
+                
+                <!-- Selector circulos inferiores colgantes -->
+                <div class="Selectors">
+                  <label for="Slider1" class="Selector"></label>
+                  <label for="Slider2" class="Selector"></label>
+                  <label for="Slider3" class="Selector"></label>
+                </div>
+              </div>
         </div>
         
         <div id="textoCC">
@@ -38,19 +67,24 @@
         </div>
 
         <div id="imagenesSN">
-            <img src="" alt="img1">
-            <img src="" alt="img2">
+            <img src="https://images.unsplash.com/photo-1641390968145-15e506e768a3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img1" id="img1SN">
+            <img src="https://plus.unsplash.com/premium_photo-1682608389022-e30aae063fcc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img2" id="img2SN">
         </div>
     </main>
 
     <footer>
-        <h2>Detalles del Salón</h2>
-        <h3>Dirección: Lisandro de La Torre 275, San Nicolás de los Arroyos, Buenos Aires <br>
-            Importante!: Solo se alquila de día, hasta las 00:00hrs</h3>
-        <h2>Consultas</h2>
-        <h3>Mail:   ovagaleano@gmail.com <br> 
-        Teléfono: 3364572197</h3>
-        
+        <div id="detallesYConsultas">
+            <div id="detalle">
+            <h2>Detalles del Salón</h2>
+            <h3>Dirección: Lisandro de La Torre 275, San Nicolás de los Arroyos, Buenos Aires <br>
+                Importante!: Solo se alquila de día, hasta las 00:00hrs</h3>
+            </div>
+            <div id="consultas">
+            <h2>Consultas</h2>
+            <h3>Mail:   ovagaleano@gmail.com <br> 
+            Teléfono: 3364572197</h3>
+            </div>
+        </div>
         <br>
 
         <h2>Redes sociales</h2>
@@ -60,5 +94,7 @@
         </div>
         <p>©2024-2024 Desarrollado por Giuliano Garfagnoli</p>
     </footer>
+
+    <script src="/JS/scripts.js"></script>
 </body>
 </html>
