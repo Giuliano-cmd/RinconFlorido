@@ -3,6 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body{
@@ -15,14 +17,33 @@ body{
 /* Cabecera */ 
 header{
     grid-row: 1;
-    grid-column: 2 / 4;
+    grid-column: 1 / 5;
     align-content: center;
+    background-color: #FFFAFA;
+}
+#textoH{
+    margin-bottom: 20px;
+    color: #FF1493;
 }
 #botonesH{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 20px
+    column-gap: 20px;
+    height: 3rem;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+#botonesH button{
+    color: #FFA500;
+    background: transparent;
+    border-style: none;
+    font-size: 1.5rem;
+    text-decoration: underline;
 }
 
 /* Contenido principal*/
