@@ -12,6 +12,8 @@ body{
     grid-template-rows: repeat(3, 1fr);
     row-gap: 20px;
 }
+
+
 /* Cabecera */ 
 header{
     grid-row: 1;
@@ -22,7 +24,7 @@ header{
     background-position: 20%;
     background-attachment: fixed;
     width: 100%;
-    height: 50rem;
+    height: 100%;
 }
 #circuloH{
     width: 100%;
@@ -57,6 +59,7 @@ h2{
     padding: 10px;
 }
 
+
 /* Contenido principal*/
 main{
     grid-row: 2;
@@ -65,11 +68,14 @@ main{
     flex-direction: column;
     row-gap: 20px;
 }
-
+/*Seccion Contamos con*/
 #contamosCon{
     display: flex;
-    flex-direction: row;
-    column-gap:20px
+    flex-direction: column;
+    column-gap: 20px;
+}
+#textoCC{
+    margin: 20px;
 }
 .carrusel{
     display: grid;
@@ -81,19 +87,21 @@ main{
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
 }
-.card{
-    text-align: center;
+.card img{
+    width: 30rem;
+    height: 20rem;
 }
-
+/*Seccion Sobre nosotros*/
 #sobreNos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
-
+/*Seccion Detalles y consultas*/
 #detallesYConsultas{
     display: flex;
     flex-direction: row;
 }
+
 
 /* Pie de página*/
 footer{
