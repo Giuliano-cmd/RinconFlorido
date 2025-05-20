@@ -5,6 +5,7 @@
     text-align: center;
 }
 
+/* Diseño Mobile*/
 body{
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     display: grid;
@@ -16,9 +17,11 @@ body{
 
 /* Cabecera */ 
 header{
+    display: flex;
     grid-row: 1;
     grid-column: 1 / 5;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     background: url("../Imgs/fondoHeader.jpg");
     background-size: cover;
     background-position: 20%;
@@ -31,7 +34,6 @@ header{
     height: min-content;
     background-color: #FFFAFA;
     align-content: center;
-    right: 200px;
 }
 #textoH{
     margin-bottom: 20px;
@@ -50,7 +52,7 @@ h1{
 h2{
     font-size: 1.5rem;
 }
-#botonesH button{
+button{
     color: #FFFAFA;
     background-color: #FFA500;
     border-style: none;
@@ -58,6 +60,7 @@ h2{
     border-radius: 20px;
     padding: 10px;
 }
+
 
 
 /* Contenido principal*/
@@ -88,6 +91,7 @@ main{
     scrollbar-width: none;
 }
 .card img{
+    scroll-snap-align: center;
     width: 30rem;
     height: 20rem;
 }
@@ -132,4 +136,85 @@ footer{
 }
 footer i{
     font-size: 60px;
+}
+
+
+/* Diseño Desktop*/
+@media screen and (min-width: 768px){
+    /* Cabecera */
+    #circuloH{
+        width: 25rem;
+        border-radius: 10px;
+    }
+    #textoH h1{
+        font-size: 3rem;
+    }
+    #textoH h2{
+        font-size: 2rem;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+    button:hover{
+        box-shadow: inset 0px 10px 4px 3px #986300;
+    }
+
+    /* Contenido principal */
+
+    /*Seccion Contamos con*/
+    #contamosCon{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+    }
+    #textoCC{
+        grid-column: 1 / 7;
+        height: auto;
+        align-content: center;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .carrusel{
+        scrollbar-width: thin;
+        grid-column: 7 / 13;
+    }
+    .card img{
+        width: 40rem;
+        height: 30rem;
+    }
+
+    /*Seccion Sobre nosotros*/
+    #sobreNos{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 10rem;
+    }
+    #textoSN{
+        grid-column: 7 / 13;
+        align-content: center;
+    }
+    #imagenesSB{
+        grid-column: 1 / 7;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    #imagenesSB img{
+        width: 50%;
+    }
+    #img2SN{
+        align-self: self-end;
+    }
+
+    /* Pie de página*/
+    #redesSoc{
+        justify-content: center;
+    }
+    footer i{
+        margin-left: 5rem;
+        margin-right: 5rem
+    }
 }
